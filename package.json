@@ -1,0 +1,22 @@
+{
+  "name": "responsive-portfolio-site-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asenchekov/Responsive-Portfolio-Site-SASS.git"
+  },
+  "author": "Asen Chekov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asenchekov/Responsive-Portfolio-Site-SASS/issues"
+  },
+  "homepage": "https://github.com/asenchekov/Responsive-Portfolio-Site-SASS#readme",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
