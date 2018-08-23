@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,8 +16,9 @@
   "bugs": {
     "url": "https://github.com/asenchekov/Responsive-Portfolio-Site-SASS/issues"
   },
-  "homepage": "https://github.com/asenchekov/Responsive-Portfolio-Site-SASS#readme",
+  "homepage": "https://asenchekov.github.io/Responsive-Portfolio-Site-SASS",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.2"
   }
 }
