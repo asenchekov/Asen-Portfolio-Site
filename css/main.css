@@ -159,7 +159,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio"
+ "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -169,6 +170,8 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
+    .about-info .bio p {
+      padding-right: 5rem; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -177,7 +180,7 @@ main {
     grid-area: job3; }
   .about-info .job {
     background: #515151;
-    padding: 0.5rem;
+    padding: 2rem;
     border-bottom: #eece1a 5px solid; }
 
 .projects {
@@ -205,7 +208,6 @@ main {
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
       background: #eece1a;
       color: #000; }
       .boxes div:hover span {
@@ -241,7 +243,9 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio p {
+    padding-right: 0; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -270,13 +274,31 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage"
+ "bio"
+ "job1"
+ "job2"
+ "job3";
     grid-template-columns: 1fr; }
+  .about-info .bio p {
+    padding-right: 0; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
+  main {
+    padding: 4rem 1rem; }
+    main#home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      font-size: 4rem; }
+    main .sm-heading {
+      font-size: 1.2rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .about-info .bio {
+    font-size: 1.2rem; }
+    .about-info .job {
+      padding: 0.5rem; }
+  .boxes div {
+    font-size: 1.5rem; } }
